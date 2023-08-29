@@ -36,9 +36,14 @@ body {
     border-radius: 25px;
     background: transparent;
     padding: 100px;
-    text-align: justify-all;
+    text-align: justify;
     border: 2px solid white;
     text-decoration: none;
+  }
+
+  .back-button{
+    color: white;
+    background-color: #0795C3;
   }
 
   nav > a:hover {
