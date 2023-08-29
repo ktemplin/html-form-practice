@@ -4,9 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <form action="results.html" method="GET" enctype="multipart/form-data">
+  <header>
+    <img src="https://cdn.evbuc.com/eventlogos/188084824/acastandardcirclefullname.png" 
+    class="logo" alt="austin coding academy logo" width="">
+        <nav>
+            <a class="has-border" href="./resume.html">Resume</a>
+            <a class="has-border" href="./about_me.html">About Me</a>
+            <a class="has-border" href="#">My Blog</a>
+            <a class="has-border" href="#">Contact Me</a>
+        </nav>
+    </header>
+
+    <form class="form-box" action="results.html" method="GET" enctype="multipart/form-data">
       <div>
         <label for="name">Name</label>
         <input type="text" name="name" id="name" >
@@ -24,17 +36,20 @@
       <input type="date" name="date" id="date" min="2019-06-10">
     </div>
     <div>
-      Favorite Food
+      How did you hear about me?
       <div>
-        <label for="banana">Banana</label>
-        <input type="checkbox" name="banana" id="banana">
-      </div>
-      <div>
-        <label for="apple">Apple</label>
-        <input type="checkbox" name="apple" id="apple">
+        <input type="radio" id="linkedin" name="how_heard" value="linkedin">
+        <label for="linkedin">LinkedIn</label><br>
+        <input type="radio" id="classmate" name="how_heard" value="classmate">
+        <label for="classmate">ACA Classmate</label><br>
+        <input type="radio" id="resume" name="how_heard" value="resume">
+        <label for="resume">Resume Submission</label><br>
+        <input type="radio" id="aca-rec" name="how_heard" value="aca-rec">
+        <label for="aca-rec">Austin Coding Academy Recommendation</label><br>
       </div>
     </div>
-    <div>
+    <br>
+    <div class="form-head">
       Gender
       <div>
         <label for="male">Male</label>
@@ -86,6 +101,6 @@
     <button type="reset">Reset</button>
     <button type="submit">Submit</button>
   </form>
-  <!-- <script src="scripts.js"></script> -->
+  <script src="scripts.js"></script>
 </body>
 </html>
